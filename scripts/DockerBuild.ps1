@@ -14,7 +14,7 @@ $acrLoginServer = az acr show `
   --output tsv
 
 # Full image name
-$imageFullName = "$acrLoginServer/$imageName:$imageTag"
+$imageFullName = "${acrLoginServer}/${imageName}:${imageTag}"
 
 # Build and push the Docker image using ACR Build
 az acr build `
