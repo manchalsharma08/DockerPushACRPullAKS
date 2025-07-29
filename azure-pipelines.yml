@@ -1,6 +1,5 @@
 trigger: none
-pool: 
-  vmImage: ubuntu
+pool: default
 stages:
 - stage: infraStgae
   jobs:
