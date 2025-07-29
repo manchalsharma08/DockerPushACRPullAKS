@@ -1,0 +1,14 @@
+trigger: none
+pool: 
+  vmImage: ubuntu
+stages:
+- stage: infraStgae
+  jobs:
+  - job: infraJob
+    steps:
+     - task: AzureCLI@2
+       inputs:
+         azureSubscription: 'pagalSC'
+         scriptType: 'ps'
+         scriptLocation: 'scriptPath'
+         scriptPath: 'scripts/deploy-aks.ps1'
