@@ -23,6 +23,6 @@ stages:
            azureSubscription: 'pagalSC'
            scriptType: 'ps'
            scriptLocation: 'scriptPath'
-           scriptPath: 'scripts/next.ps1'
+           scriptPath: 'next.ps1'
            workingDirectory: '$(System.DefaultWorkingDirectory)'
  
