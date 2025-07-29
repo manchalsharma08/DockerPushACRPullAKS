@@ -5,12 +5,12 @@ stages:
   jobs:
   - job: infraJob
     steps:
-     - task: AzureCLI@2
-       inputs:
-         azureSubscription: 'pagalSC'
-         scriptType: 'ps'
-         scriptLocation: 'scriptPath'
-         scriptPath: 'scripts/deploy-aks.ps1'
+    #  - task: AzureCLI@2
+    #    inputs:
+    #      azureSubscription: 'pagalSC'
+    #      scriptType: 'ps'
+    #      scriptLocation: 'scriptPath'
+    #      scriptPath: 'scripts/deploy-aks.ps1'
      - task: AzureCLI@2
        inputs:
          azureSubscription: 'pagalSC'

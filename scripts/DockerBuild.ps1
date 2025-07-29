@@ -3,7 +3,7 @@ $resourceGroupName = "mymeerg01"
 $acrName = "mymeeacr01"                     # ACR name (not login server)
 $imageName = "myapp"                        # Image name
 $imageTag = "v1"                            # Tag (e.g., v1, latest)
-$dockerfilePath = "./Dockerfile"           # Relative path to Dockerfile
+$dockerfilePath = "scripts/Dockerfile"           # Relative path to Dockerfile
 $contextPath = "."                         # Build context (typically the project root)
 
 # Get ACR login server
