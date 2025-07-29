@@ -11,10 +11,18 @@ stages:
     #      scriptType: 'ps'
     #      scriptLocation: 'scriptPath'
     #      scriptPath: 'scripts/deploy-aks.ps1'
-     - task: AzureCLI@2
-       inputs:
-         azureSubscription: 'pagalSC'
-         scriptType: 'ps'
-         scriptLocation: 'scriptPath'
-         scriptPath: 'scripts/DockerBuild.ps1'
-         workingDirectory: '$(System.DefaultWorkingDirectory)'
+    #  - task: AzureCLI@2
+      #  inputs:
+      #    azureSubscription: 'pagalSC'
+      #    scriptType: 'ps'
+      #    scriptLocation: 'scriptPath'
+      #    scriptPath: 'scripts/DockerBuild.ps1'
+      #    workingDirectory: '$(System.DefaultWorkingDirectory)'
+        - task: AzureCLI@2
+          inputs:
+           azureSubscription: 'pagalSC'
+           scriptType: 'ps'
+           scriptLocation: 'scriptPath'
+           scriptPath: 'scripts/next.ps1'
+           workingDirectory: '$(System.DefaultWorkingDirectory)'
+ 
