@@ -5,12 +5,12 @@
 
 # Set variables
 # Variables
-$resourceGroupName = "mymeerg01"
+$resourceGroupName = "myrg03"
 $location = "eastus"
-$aksClusterName = "mymeeaks"
-$nodeCount = 2
+$aksClusterName = "mymeeaks3"
+$nodeCount = 1
 $nodeVMSize = "Standard_B2s"
-$ACR_NAME = "mymeeacr01"
+$ACR_NAME = "mymeeacr03"
 $acrSku = "Basic"
 
 # Create Resource Group
@@ -54,7 +54,7 @@ if ($LASTEXITCODE -eq 0) {
 #   --name $aksClusterName       
 
 #  # Set the cluster subscription
-# az account set --subscription 3a734e32-021d-4243-89ff-c3495e6aa4da
+# az account set --subscription 9a19641f-a0da-455d-9b90-51dc0d0cdfee
 # # Get credentials for the AKS cluster
 # az aks get-credentials --resource-group mymeerg01 --name mymeeaks --overwrite-existing
 
